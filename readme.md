@@ -14,17 +14,17 @@ A simple Lumen app designed to provide a basic API for our code test.
 
 1. Install PHP (7.2+) or use an environment like [Laravel Homestead](https://laravel.com/docs/6.x/homestead) or Docker (see below)
 
-1. Install [composer](http://getcomposer.org/) and run `composer install` to install dependencies
+2. Install [composer](http://getcomposer.org/) and run `composer install` to install dependencies
 
-1. Copy the `.env.example` file to `.env` and set a random string for `APP_KEY`
+3. Copy the `.env.example` file to `.env` and set a random string for `APP_KEY`
 
-1. Run `touch database/database.sqlite` to create a development database
+4. Run `touch database/database.sqlite` to create a development database
 
-1. Run `php artisan migrate` to migrate your development database
+5. Run `php artisan migrate` to migrate your development database
 
-1. Run `php artisan db:seed` to seed your development database
+6. Run `php artisan db:seed` to seed your development database
 
-1. Run `php -S localhost:3000 -t public` to start up the local development server
+7. Run `php -S localhost:3000 -t public` to start up the local development server
 
 You should get JSON output from http://localhost:3000/members
 
@@ -40,11 +40,11 @@ As an alternative to installing PHP directly, you can use the Docker files provi
 
 1. `cd laradock`
 
-1. `cp .env-example .env`
+2. `cp .env-example .env`
 
-1. Change `NGINX_HOST_HTTP_PORT` to `3000`, `WORKSPACE_BROWSERSYNC_HOST_PORT` to `4000` and `WORKSPACE_BROWSERSYNC_UI_HOST_PORT` to `4001`
+3. Change `NGINX_HOST_HTTP_PORT` to `3000`, `WORKSPACE_BROWSERSYNC_HOST_PORT` to `4000` and `WORKSPACE_BROWSERSYNC_UI_HOST_PORT` to `4001`
 
-1. `docker-compose up -d nginx`
+4. `docker-compose up -d nginx`
 
 > Note: This could take a few minutes on the initial build
 
