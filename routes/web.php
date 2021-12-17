@@ -13,7 +13,11 @@
 |
 */
 
-$router->get('/members', function () use ($router) {
-    $members = App\Models\Member::all();
-    return response()->json(['error' => false, 'data' => $members]);
+/* Default */
+$router->get('/', function () use ($router) {
+    return $router->app->version();
 });
+
+/* Member */
+$router->get('members', 'MemberController@retriveMembers');
+/* End Member */

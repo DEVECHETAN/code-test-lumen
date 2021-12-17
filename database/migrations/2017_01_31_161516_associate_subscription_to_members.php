@@ -14,7 +14,7 @@ class AssociateSubscriptionToMembers extends Migration
     public function up()
     {
         Schema::table('members', function(Blueprint $table) {
-            $table->integer('subscription_id')->nullable();
+            $table->integer('subscription_id')->unsigned();
             $table->foreign('subscription_id')->references('id')->on('subscriptions');
         });
     }
